@@ -10,19 +10,19 @@
         d:DataContext="{x:Static vm:Program.designVm}">
   <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
     <StackPanel Orientation="Horizontal">
-      <RadioButton IsChecked="{Binding IsA}" Command="{Binding SetA}"/>
+      <RadioButton IsChecked="{Binding IsA, Mode=OneWay}" Command="{Binding SetA}"/>
       <TextBlock Text="A"/>
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <RadioButton IsChecked="{Binding IsB}" Command="{Binding SetB}"/>
+      <RadioButton IsChecked="{Binding IsB, Mode=OneWay}" Command="{Binding SetB}"/>
       <TextBlock Text="B"/>
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <RadioButton IsChecked="{Binding IsC}" Command="{Binding SetC}"/>
+      <RadioButton IsChecked="{Binding IsC, Mode=OneWay}" Command="{Binding SetC}"/>
       <TextBlock Text="C"/>
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <RadioButton IsChecked="{Binding IsD}" Command="{Binding SetD}"/>
+      <RadioButton IsChecked="{Binding IsD, Mode=OneWay}" Command="{Binding SetD}"/>
       <TextBlock Text="D"/>
     </StackPanel>
   </StackPanel>
